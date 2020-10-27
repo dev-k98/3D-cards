@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 800px;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	height: 40rem;
+	width: 35rem;
+}
+
+.wings {
+	min-height: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.backdrop {
+	transition: all 0.5s ease-in-out;
+	width: 15rem;
+	height: 15rem;
+	position: absolute;
+	background: linear-gradient(
+		rgb(0, 0, 0),
+		rgba(245, 244, 244, 0),
+		rgba(245, 244, 244, 0)
+	);
+	border-radius: 50%;
+	z-index: 0;
+}
+
+.wings img {
+	z-index: 1;
+	width: 20rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.card {
+	font-family: "poppins", sans-serif;
+	background: url(cloud.jpg);
+	background-size: cover;
+	height: 40rem;
+	width: 25rem;
+	padding: 0 5rem;
+	border-radius: 20px;
+	box-shadow: 0 20px 50px rgb(0, 0, 0, 0.1), 0 10px 20px rgb(0, 0, 0, 0.1);
+	transform-style: preserve-3d;
+	transition: all 0.5s ease-in-out;
+}
+.info {
+	transition: all 0.5s ease-in-out;
+}
+.info h2 {
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+.info h3 {
+	font-weight: lighter;
+	font-size: 1.5rem;
+	color: rgb(228, 41, 41);
+}
+
+.list {
+	display: flex;
+	padding: 1rem 0;
+	font-size: 1rem;
+	font-weight: lighter;
+	justify-content: space-around;
+}
+
+.tgs {
+	padding: 5px 0.5rem;
+	border-radius: 5px;
+	background-color: rgba(255, 0, 0, 0.466);
+	color: rgb(0, 0, 0);
+	font-size: large;
+	font-weight: bold;
+}
+
+.buttons {
+	font-family: poppins;
+	display: flex;
+	justify-content: space-around;
+}
+
+.buttons button {
+	font-family: poppins;
+	border: none;
+	border-radius: 10%;
+	outline: none;
+	padding: 1rem 0.5rem;
+	color: rgb(156, 156, 156);
+	background-color: rgba(3, 3, 3, 0.63);
+	cursor: pointer;
+}
+
+.buttons button:hover {
+	background-color: rgb(151, 144, 144);
+	color: rgb(255, 255, 255);
+}
